@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		552CD91D26624EE200D777DB /* SnowPeaTurret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552CD91B26624EE200D777DB /* SnowPeaTurret.cpp */; };
+		552CD9202662552100D777DB /* FrozenPeaBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552CD91E2662552100D777DB /* FrozenPeaBullet.cpp */; };
+		552CD9232662980A00D777DB /* FriesBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552CD9212662980A00D777DB /* FriesBullet.cpp */; };
+		552CD92626629AC800D777DB /* EnemyBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552CD92426629AC800D777DB /* EnemyBullet.cpp */; };
+		552CD92926663FA300D777DB /* WallNutTurret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552CD92726663FA300D777DB /* WallNutTurret.cpp */; };
+		552CD92C266649A300D777DB /* ExplodeNutTurret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552CD92A266649A300D777DB /* ExplodeNutTurret.cpp */; };
+		552CD92F2667C53C00D777DB /* RemoveTurret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552CD92D2667C53C00D777DB /* RemoveTurret.cpp */; };
+		552CD9322668DA6C00D777DB /* SunflowerTurret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552CD9302668DA6C00D777DB /* SunflowerTurret.cpp */; };
+		552CD935266932CE00D777DB /* ScreendoorEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 552CD933266932CE00D777DB /* ScreendoorEnemy.cpp */; };
+		55902E0E265A52B100C13CE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55902E0D265A52B100C13CE7 /* Assets.xcassets */; };
+		55902E11265A52B100C13CE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55902E0F265A52B100C13CE7 /* Main.storyboard */; };
+		55902E29265A533A00C13CE7 /* liballegro_ttf.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E1C265A533A00C13CE7 /* liballegro_ttf.5.2.6.dylib */; };
+		55902E2A265A533A00C13CE7 /* liballegro_ttf.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E1C265A533A00C13CE7 /* liballegro_ttf.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E2B265A533A00C13CE7 /* liballegro_primitives.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E1D265A533A00C13CE7 /* liballegro_primitives.5.2.6.dylib */; };
+		55902E2C265A533A00C13CE7 /* liballegro_primitives.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E1D265A533A00C13CE7 /* liballegro_primitives.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E2D265A533A00C13CE7 /* liballegro_image.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E1E265A533A00C13CE7 /* liballegro_image.5.2.6.dylib */; };
+		55902E2E265A533A00C13CE7 /* liballegro_image.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E1E265A533A00C13CE7 /* liballegro_image.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E2F265A533A00C13CE7 /* liballegro_physfs.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E1F265A533A00C13CE7 /* liballegro_physfs.5.2.6.dylib */; };
+		55902E30265A533A00C13CE7 /* liballegro_physfs.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E1F265A533A00C13CE7 /* liballegro_physfs.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E31265A533A00C13CE7 /* liballegro_acodec.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E20265A533A00C13CE7 /* liballegro_acodec.5.2.6.dylib */; };
+		55902E32265A533A00C13CE7 /* liballegro_acodec.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E20265A533A00C13CE7 /* liballegro_acodec.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E33265A533A00C13CE7 /* liballegro.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E21265A533A00C13CE7 /* liballegro.5.2.6.dylib */; };
+		55902E34265A533A00C13CE7 /* liballegro.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E21265A533A00C13CE7 /* liballegro.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E35265A533A00C13CE7 /* liballegro_main.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E22265A533A00C13CE7 /* liballegro_main.5.2.6.dylib */; };
+		55902E36265A533A00C13CE7 /* liballegro_main.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E22265A533A00C13CE7 /* liballegro_main.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E37265A533A00C13CE7 /* liballegro_memfile.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E23265A533A00C13CE7 /* liballegro_memfile.5.2.6.dylib */; };
+		55902E38265A533A00C13CE7 /* liballegro_memfile.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E23265A533A00C13CE7 /* liballegro_memfile.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E39265A533A00C13CE7 /* liballegro_color.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E24265A533A00C13CE7 /* liballegro_color.5.2.6.dylib */; };
+		55902E3A265A533A00C13CE7 /* liballegro_color.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E24265A533A00C13CE7 /* liballegro_color.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E3B265A533A00C13CE7 /* liballegro_dialog.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E25265A533A00C13CE7 /* liballegro_dialog.5.2.6.dylib */; };
+		55902E3C265A533A00C13CE7 /* liballegro_dialog.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E25265A533A00C13CE7 /* liballegro_dialog.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E3D265A533A00C13CE7 /* liballegro_video.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E26265A533A00C13CE7 /* liballegro_video.5.2.6.dylib */; };
+		55902E3E265A533A00C13CE7 /* liballegro_video.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E26265A533A00C13CE7 /* liballegro_video.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E3F265A533A00C13CE7 /* liballegro_font.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E27265A533A00C13CE7 /* liballegro_font.5.2.6.dylib */; };
+		55902E40265A533A00C13CE7 /* liballegro_font.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E27265A533A00C13CE7 /* liballegro_font.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E41265A533A00C13CE7 /* liballegro_audio.5.2.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55902E28265A533A00C13CE7 /* liballegro_audio.5.2.6.dylib */; };
+		55902E42265A533A00C13CE7 /* liballegro_audio.5.2.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 55902E28265A533A00C13CE7 /* liballegro_audio.5.2.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55902E8C265A538400C13CE7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E44265A538100C13CE7 /* main.cpp */; };
+		55902E8D265A538400C13CE7 /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E46265A538100C13CE7 /* Point.cpp */; };
+		55902E8E265A538400C13CE7 /* SofaEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E47265A538100C13CE7 /* SofaEnemy.cpp */; };
+		55902E8F265A538400C13CE7 /* Allegro5Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E48265A538100C13CE7 /* Allegro5Exception.cpp */; };
+		55902E90265A538400C13CE7 /* PlayScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E4D265A538100C13CE7 /* PlayScene.cpp */; };
+		55902E91265A538400C13CE7 /* Collider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E4E265A538100C13CE7 /* Collider.cpp */; };
+		55902E92265A538400C13CE7 /* IControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E4F265A538100C13CE7 /* IControl.cpp */; };
+		55902E93265A538400C13CE7 /* WBCellTurret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E54265A538200C13CE7 /* WBCellTurret.cpp */; };
+		55902E94265A538400C13CE7 /* PlateletTurret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E56265A538200C13CE7 /* PlateletTurret.cpp */; };
+		55902E95265A538400C13CE7 /* Start_Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E58265A538200C13CE7 /* Start_Scene.cpp */; };
+		55902E96265A538400C13CE7 /* ImageButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E59265A538200C13CE7 /* ImageButton.cpp */; };
+		55902E97265A538400C13CE7 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E5A265A538200C13CE7 /* Sprite.cpp */; };
+		55902E98265A538400C13CE7 /* IObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E5B265A538200C13CE7 /* IObject.cpp */; };
+		55902E99265A538400C13CE7 /* GameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E5C265A538200C13CE7 /* GameEngine.cpp */; };
+		55902E9A265A538400C13CE7 /* Plane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E5F265A538200C13CE7 /* Plane.cpp */; };
+		55902E9B265A538400C13CE7 /* StageSelectScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E60265A538200C13CE7 /* StageSelectScene.cpp */; };
+		55902E9C265A538400C13CE7 /* IScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E61265A538200C13CE7 /* IScene.cpp */; };
+		55902E9D265A538400C13CE7 /* DirtyEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E62265A538200C13CE7 /* DirtyEffect.cpp */; };
+		55902E9E265A538400C13CE7 /* ExplosionEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E66265A538200C13CE7 /* ExplosionEffect.cpp */; };
+		55902E9F265A538400C13CE7 /* Group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E69265A538200C13CE7 /* Group.cpp */; };
+		55902EA0265A538400C13CE7 /* StrongEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E6A265A538200C13CE7 /* StrongEnemy.cpp */; };
+		55902EA1265A538400C13CE7 /* AudioHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E6B265A538200C13CE7 /* AudioHelper.cpp */; };
+		55902EA2265A538400C13CE7 /* Turret.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E6C265A538200C13CE7 /* Turret.cpp */; };
+		55902EA3265A538400C13CE7 /* WinScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E6E265A538200C13CE7 /* WinScene.cpp */; };
+		55902EA4265A538400C13CE7 /* NormalEnemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E70265A538300C13CE7 /* NormalEnemy.cpp */; };
+		55902EA5265A538400C13CE7 /* IceCreamBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E71265A538300C13CE7 /* IceCreamBullet.cpp */; };
+		55902EA6265A538400C13CE7 /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E72265A538300C13CE7 /* Bullet.cpp */; };
+		55902EA7265A538400C13CE7 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E76265A538300C13CE7 /* Image.cpp */; };
+		55902EA8265A538400C13CE7 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E7B265A538300C13CE7 /* Enemy.cpp */; };
+		55902EA9265A538400C13CE7 /* LoseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E7C265A538300C13CE7 /* LoseScene.cpp */; };
+		55902EAA265A538400C13CE7 /* PockyBullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E7D265A538300C13CE7 /* PockyBullet.cpp */; };
+		55902EAB265A538400C13CE7 /* Slider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E7E265A538300C13CE7 /* Slider.cpp */; };
+		55902EAC265A538400C13CE7 /* Label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E7F265A538300C13CE7 /* Label.cpp */; };
+		55902EAD265A538400C13CE7 /* Resources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E84265A538300C13CE7 /* Resources.cpp */; };
+		55902EAE265A538400C13CE7 /* TurretButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E85265A538300C13CE7 /* TurretButton.cpp */; };
+		55902EAF265A538400C13CE7 /* LOG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902E88265A538300C13CE7 /* LOG.cpp */; };
+		55902EB0265A538400C13CE7 /* log.txt in Resources */ = {isa = PBXBuildFile; fileRef = 55902E8A265A538300C13CE7 /* log.txt */; };
+		55902EB2265A53A300C13CE7 /* resources in Resources */ = {isa = PBXBuildFile; fileRef = 55902EB1265A53A300C13CE7 /* resources */; };
+		55902EB5265A5B0200C13CE7 /* Setting_Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902EB3265A5B0200C13CE7 /* Setting_Scene.cpp */; };
+		55902EB8265A681700C13CE7 /* ShootEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55902EB6265A681700C13CE7 /* ShootEffect.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55902E43265A533A00C13CE7 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55902E34265A533A00C13CE7 /* liballegro.5.2.6.dylib in Embed Libraries */,
+				55902E3A265A533A00C13CE7 /* liballegro_color.5.2.6.dylib in Embed Libraries */,
+				55902E3C265A533A00C13CE7 /* liballegro_dialog.5.2.6.dylib in Embed Libraries */,
+				55902E3E265A533A00C13CE7 /* liballegro_video.5.2.6.dylib in Embed Libraries */,
+				55902E2E265A533A00C13CE7 /* liballegro_image.5.2.6.dylib in Embed Libraries */,
+				55902E38265A533A00C13CE7 /* liballegro_memfile.5.2.6.dylib in Embed Libraries */,
+				55902E2C265A533A00C13CE7 /* liballegro_primitives.5.2.6.dylib in Embed Libraries */,
+				55902E2A265A533A00C13CE7 /* liballegro_ttf.5.2.6.dylib in Embed Libraries */,
+				55902E32265A533A00C13CE7 /* liballegro_acodec.5.2.6.dylib in Embed Libraries */,
+				55902E30265A533A00C13CE7 /* liballegro_physfs.5.2.6.dylib in Embed Libraries */,
+				55902E36265A533A00C13CE7 /* liballegro_main.5.2.6.dylib in Embed Libraries */,
+				55902E40265A533A00C13CE7 /* liballegro_font.5.2.6.dylib in Embed Libraries */,
+				55902E42265A533A00C13CE7 /* liballegro_audio.5.2.6.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		552CD91B26624EE200D777DB /* SnowPeaTurret.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SnowPeaTurret.cpp; sourceTree = "<group>"; };
+		552CD91C26624EE200D777DB /* SnowPeaTurret.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SnowPeaTurret.hpp; sourceTree = "<group>"; };
+		552CD91E2662552100D777DB /* FrozenPeaBullet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FrozenPeaBullet.cpp; sourceTree = "<group>"; };
+		552CD91F2662552100D777DB /* FrozenPeaBullet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FrozenPeaBullet.hpp; sourceTree = "<group>"; };
+		552CD9212662980A00D777DB /* FriesBullet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FriesBullet.cpp; sourceTree = "<group>"; };
+		552CD9222662980A00D777DB /* FriesBullet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FriesBullet.hpp; sourceTree = "<group>"; };
+		552CD92426629AC800D777DB /* EnemyBullet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyBullet.cpp; sourceTree = "<group>"; };
+		552CD92526629AC800D777DB /* EnemyBullet.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EnemyBullet.hpp; sourceTree = "<group>"; };
+		552CD92726663FA300D777DB /* WallNutTurret.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WallNutTurret.cpp; sourceTree = "<group>"; };
+		552CD92826663FA300D777DB /* WallNutTurret.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WallNutTurret.hpp; sourceTree = "<group>"; };
+		552CD92A266649A300D777DB /* ExplodeNutTurret.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExplodeNutTurret.cpp; sourceTree = "<group>"; };
+		552CD92B266649A300D777DB /* ExplodeNutTurret.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ExplodeNutTurret.hpp; sourceTree = "<group>"; };
+		552CD92D2667C53C00D777DB /* RemoveTurret.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveTurret.cpp; sourceTree = "<group>"; };
+		552CD92E2667C53C00D777DB /* RemoveTurret.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RemoveTurret.hpp; sourceTree = "<group>"; };
+		552CD9302668DA6C00D777DB /* SunflowerTurret.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SunflowerTurret.cpp; sourceTree = "<group>"; };
+		552CD9312668DA6C00D777DB /* SunflowerTurret.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SunflowerTurret.hpp; sourceTree = "<group>"; };
+		552CD933266932CE00D777DB /* ScreendoorEnemy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScreendoorEnemy.cpp; sourceTree = "<group>"; };
+		552CD934266932CE00D777DB /* ScreendoorEnemy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ScreendoorEnemy.hpp; sourceTree = "<group>"; };
+		55902E04265A52AF00C13CE7 /* Mini_Project_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mini_Project_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55902E0D265A52B100C13CE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55902E10265A52B100C13CE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55902E12265A52B100C13CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55902E15265A52B100C13CE7 /* Mini_Project_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mini_Project_2.entitlements; sourceTree = "<group>"; };
+		55902E1C265A533A00C13CE7 /* liballegro_ttf.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_ttf.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_ttf.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E1D265A533A00C13CE7 /* liballegro_primitives.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_primitives.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E1E265A533A00C13CE7 /* liballegro_image.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_image.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_image.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E1F265A533A00C13CE7 /* liballegro_physfs.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_physfs.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_physfs.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E20265A533A00C13CE7 /* liballegro_acodec.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_acodec.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E21265A533A00C13CE7 /* liballegro.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E22265A533A00C13CE7 /* liballegro_main.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_main.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_main.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E23265A533A00C13CE7 /* liballegro_memfile.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_memfile.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_memfile.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E24265A533A00C13CE7 /* liballegro_color.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_color.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_color.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E25265A533A00C13CE7 /* liballegro_dialog.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_dialog.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_dialog.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E26265A533A00C13CE7 /* liballegro_video.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_video.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_video.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E27265A533A00C13CE7 /* liballegro_font.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_font.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_font.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E28265A533A00C13CE7 /* liballegro_audio.5.2.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.5.2.6.dylib; path = ../../../../usr/local/Cellar/allegro/5.2.6.0/lib/liballegro_audio.5.2.6.dylib; sourceTree = "<group>"; };
+		55902E44265A538100C13CE7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		55902E45265A538100C13CE7 /* WBCellTurret.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WBCellTurret.hpp; sourceTree = "<group>"; };
+		55902E46265A538100C13CE7 /* Point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Point.cpp; sourceTree = "<group>"; };
+		55902E47265A538100C13CE7 /* SofaEnemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SofaEnemy.cpp; sourceTree = "<group>"; };
+		55902E48265A538100C13CE7 /* Allegro5Exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Allegro5Exception.cpp; sourceTree = "<group>"; };
+		55902E49265A538100C13CE7 /* ExplosionEffect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ExplosionEffect.hpp; sourceTree = "<group>"; };
+		55902E4A265A538100C13CE7 /* Image.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Image.hpp; sourceTree = "<group>"; };
+		55902E4B265A538100C13CE7 /* TurretButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TurretButton.hpp; sourceTree = "<group>"; };
+		55902E4C265A538100C13CE7 /* Label.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Label.hpp; sourceTree = "<group>"; };
+		55902E4D265A538100C13CE7 /* PlayScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlayScene.cpp; sourceTree = "<group>"; };
+		55902E4E265A538100C13CE7 /* Collider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Collider.cpp; sourceTree = "<group>"; };
+		55902E4F265A538100C13CE7 /* IControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IControl.cpp; sourceTree = "<group>"; };
+		55902E50265A538100C13CE7 /* Collider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Collider.hpp; sourceTree = "<group>"; };
+		55902E51265A538100C13CE7 /* Plane.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Plane.hpp; sourceTree = "<group>"; };
+		55902E52265A538200C13CE7 /* Resources.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Resources.hpp; sourceTree = "<group>"; };
+		55902E53265A538200C13CE7 /* StageSelectScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StageSelectScene.hpp; sourceTree = "<group>"; };
+		55902E54265A538200C13CE7 /* WBCellTurret.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WBCellTurret.cpp; sourceTree = "<group>"; };
+		55902E55265A538200C13CE7 /* StrongEnemy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StrongEnemy.hpp; sourceTree = "<group>"; };
+		55902E56265A538200C13CE7 /* PlateletTurret.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlateletTurret.cpp; sourceTree = "<group>"; };
+		55902E57265A538200C13CE7 /* IControl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IControl.hpp; sourceTree = "<group>"; };
+		55902E58265A538200C13CE7 /* Start_Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Start_Scene.cpp; sourceTree = "<group>"; };
+		55902E59265A538200C13CE7 /* ImageButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageButton.cpp; sourceTree = "<group>"; };
+		55902E5A265A538200C13CE7 /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
+		55902E5B265A538200C13CE7 /* IObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IObject.cpp; sourceTree = "<group>"; };
+		55902E5C265A538200C13CE7 /* GameEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameEngine.cpp; sourceTree = "<group>"; };
+		55902E5D265A538200C13CE7 /* GameEngine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameEngine.hpp; sourceTree = "<group>"; };
+		55902E5E265A538200C13CE7 /* NormalEnemy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NormalEnemy.hpp; sourceTree = "<group>"; };
+		55902E5F265A538200C13CE7 /* Plane.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plane.cpp; sourceTree = "<group>"; };
+		55902E60265A538200C13CE7 /* StageSelectScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StageSelectScene.cpp; sourceTree = "<group>"; };
+		55902E61265A538200C13CE7 /* IScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IScene.cpp; sourceTree = "<group>"; };
+		55902E62265A538200C13CE7 /* DirtyEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirtyEffect.cpp; sourceTree = "<group>"; };
+		55902E63265A538200C13CE7 /* Start_Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Start_Scene.hpp; sourceTree = "<group>"; };
+		55902E64265A538200C13CE7 /* IObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IObject.hpp; sourceTree = "<group>"; };
+		55902E65265A538200C13CE7 /* DirtyEffect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DirtyEffect.hpp; sourceTree = "<group>"; };
+		55902E66265A538200C13CE7 /* ExplosionEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExplosionEffect.cpp; sourceTree = "<group>"; };
+		55902E67265A538200C13CE7 /* LOG.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LOG.hpp; sourceTree = "<group>"; };
+		55902E68265A538200C13CE7 /* PlateletTurret.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PlateletTurret.hpp; sourceTree = "<group>"; };
+		55902E69265A538200C13CE7 /* Group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Group.cpp; sourceTree = "<group>"; };
+		55902E6A265A538200C13CE7 /* StrongEnemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StrongEnemy.cpp; sourceTree = "<group>"; };
+		55902E6B265A538200C13CE7 /* AudioHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioHelper.cpp; sourceTree = "<group>"; };
+		55902E6C265A538200C13CE7 /* Turret.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Turret.cpp; sourceTree = "<group>"; };
+		55902E6D265A538200C13CE7 /* Turret.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Turret.hpp; sourceTree = "<group>"; };
+		55902E6E265A538200C13CE7 /* WinScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WinScene.cpp; sourceTree = "<group>"; };
+		55902E6F265A538200C13CE7 /* IScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IScene.hpp; sourceTree = "<group>"; };
+		55902E70265A538300C13CE7 /* NormalEnemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NormalEnemy.cpp; sourceTree = "<group>"; };
+		55902E71265A538300C13CE7 /* IceCreamBullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IceCreamBullet.cpp; sourceTree = "<group>"; };
+		55902E72265A538300C13CE7 /* Bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bullet.cpp; sourceTree = "<group>"; };
+		55902E73265A538300C13CE7 /* PlayScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PlayScene.hpp; sourceTree = "<group>"; };
+		55902E74265A538300C13CE7 /* Slider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Slider.hpp; sourceTree = "<group>"; };
+		55902E75265A538300C13CE7 /* ImageButton.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImageButton.hpp; sourceTree = "<group>"; };
+		55902E76265A538300C13CE7 /* Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
+		55902E77265A538300C13CE7 /* Group.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Group.hpp; sourceTree = "<group>"; };
+		55902E78265A538300C13CE7 /* SofaEnemy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SofaEnemy.hpp; sourceTree = "<group>"; };
+		55902E79265A538300C13CE7 /* AudioHelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AudioHelper.hpp; sourceTree = "<group>"; };
+		55902E7A265A538300C13CE7 /* Bullet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bullet.hpp; sourceTree = "<group>"; };
+		55902E7B265A538300C13CE7 /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Enemy.cpp; sourceTree = "<group>"; };
+		55902E7C265A538300C13CE7 /* LoseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LoseScene.cpp; sourceTree = "<group>"; };
+		55902E7D265A538300C13CE7 /* PockyBullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PockyBullet.cpp; sourceTree = "<group>"; };
+		55902E7E265A538300C13CE7 /* Slider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Slider.cpp; sourceTree = "<group>"; };
+		55902E7F265A538300C13CE7 /* Label.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Label.cpp; sourceTree = "<group>"; };
+		55902E80265A538300C13CE7 /* Enemy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Enemy.hpp; sourceTree = "<group>"; };
+		55902E81265A538300C13CE7 /* LoseScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LoseScene.hpp; sourceTree = "<group>"; };
+		55902E82265A538300C13CE7 /* IceCreamBullet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IceCreamBullet.hpp; sourceTree = "<group>"; };
+		55902E83265A538300C13CE7 /* PockyBullet.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PockyBullet.hpp; sourceTree = "<group>"; };
+		55902E84265A538300C13CE7 /* Resources.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Resources.cpp; sourceTree = "<group>"; };
+		55902E85265A538300C13CE7 /* TurretButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TurretButton.cpp; sourceTree = "<group>"; };
+		55902E86265A538300C13CE7 /* Sprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Sprite.hpp; sourceTree = "<group>"; };
+		55902E87265A538300C13CE7 /* WinScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WinScene.hpp; sourceTree = "<group>"; };
+		55902E88265A538300C13CE7 /* LOG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LOG.cpp; sourceTree = "<group>"; };
+		55902E89265A538300C13CE7 /* Allegro5Exception.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Allegro5Exception.hpp; sourceTree = "<group>"; };
+		55902E8A265A538300C13CE7 /* log.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = log.txt; sourceTree = "<group>"; };
+		55902E8B265A538300C13CE7 /* Point.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Point.hpp; sourceTree = "<group>"; };
+		55902EB1265A53A300C13CE7 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
+		55902EB3265A5B0200C13CE7 /* Setting_Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Setting_Scene.cpp; sourceTree = "<group>"; };
+		55902EB4265A5B0200C13CE7 /* Setting_Scene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Setting_Scene.hpp; sourceTree = "<group>"; };
+		55902EB6265A681700C13CE7 /* ShootEffect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShootEffect.cpp; sourceTree = "<group>"; };
+		55902EB7265A681700C13CE7 /* ShootEffect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShootEffect.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55902E01265A52AF00C13CE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55902E33265A533A00C13CE7 /* liballegro.5.2.6.dylib in Frameworks */,
+				55902E39265A533A00C13CE7 /* liballegro_color.5.2.6.dylib in Frameworks */,
+				55902E3B265A533A00C13CE7 /* liballegro_dialog.5.2.6.dylib in Frameworks */,
+				55902E3D265A533A00C13CE7 /* liballegro_video.5.2.6.dylib in Frameworks */,
+				55902E2D265A533A00C13CE7 /* liballegro_image.5.2.6.dylib in Frameworks */,
+				55902E37265A533A00C13CE7 /* liballegro_memfile.5.2.6.dylib in Frameworks */,
+				55902E2B265A533A00C13CE7 /* liballegro_primitives.5.2.6.dylib in Frameworks */,
+				55902E29265A533A00C13CE7 /* liballegro_ttf.5.2.6.dylib in Frameworks */,
+				55902E31265A533A00C13CE7 /* liballegro_acodec.5.2.6.dylib in Frameworks */,
+				55902E2F265A533A00C13CE7 /* liballegro_physfs.5.2.6.dylib in Frameworks */,
+				55902E35265A533A00C13CE7 /* liballegro_main.5.2.6.dylib in Frameworks */,
+				55902E3F265A533A00C13CE7 /* liballegro_font.5.2.6.dylib in Frameworks */,
+				55902E41265A533A00C13CE7 /* liballegro_audio.5.2.6.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55902DFB265A52AF00C13CE7 = {
+			isa = PBXGroup;
+			children = (
+				552CD92A266649A300D777DB /* ExplodeNutTurret.cpp */,
+				552CD9302668DA6C00D777DB /* SunflowerTurret.cpp */,
+				552CD9312668DA6C00D777DB /* SunflowerTurret.hpp */,
+				552CD92B266649A300D777DB /* ExplodeNutTurret.hpp */,
+				55902EB1265A53A300C13CE7 /* resources */,
+				55902E48265A538100C13CE7 /* Allegro5Exception.cpp */,
+				55902E89265A538300C13CE7 /* Allegro5Exception.hpp */,
+				55902E6B265A538200C13CE7 /* AudioHelper.cpp */,
+				55902E79265A538300C13CE7 /* AudioHelper.hpp */,
+				55902E72265A538300C13CE7 /* Bullet.cpp */,
+				552CD92D2667C53C00D777DB /* RemoveTurret.cpp */,
+				552CD92E2667C53C00D777DB /* RemoveTurret.hpp */,
+				55902E7A265A538300C13CE7 /* Bullet.hpp */,
+				55902E4E265A538100C13CE7 /* Collider.cpp */,
+				55902E50265A538100C13CE7 /* Collider.hpp */,
+				55902E62265A538200C13CE7 /* DirtyEffect.cpp */,
+				55902E65265A538200C13CE7 /* DirtyEffect.hpp */,
+				55902E7B265A538300C13CE7 /* Enemy.cpp */,
+				552CD92726663FA300D777DB /* WallNutTurret.cpp */,
+				552CD92826663FA300D777DB /* WallNutTurret.hpp */,
+				55902E80265A538300C13CE7 /* Enemy.hpp */,
+				55902E66265A538200C13CE7 /* ExplosionEffect.cpp */,
+				55902E49265A538100C13CE7 /* ExplosionEffect.hpp */,
+				55902E5C265A538200C13CE7 /* GameEngine.cpp */,
+				55902E5D265A538200C13CE7 /* GameEngine.hpp */,
+				55902E69265A538200C13CE7 /* Group.cpp */,
+				55902E77265A538300C13CE7 /* Group.hpp */,
+				55902E71265A538300C13CE7 /* IceCreamBullet.cpp */,
+				55902E82265A538300C13CE7 /* IceCreamBullet.hpp */,
+				55902E4F265A538100C13CE7 /* IControl.cpp */,
+				55902E57265A538200C13CE7 /* IControl.hpp */,
+				55902E76265A538300C13CE7 /* Image.cpp */,
+				55902E4A265A538100C13CE7 /* Image.hpp */,
+				55902E59265A538200C13CE7 /* ImageButton.cpp */,
+				55902E75265A538300C13CE7 /* ImageButton.hpp */,
+				55902E5B265A538200C13CE7 /* IObject.cpp */,
+				55902E64265A538200C13CE7 /* IObject.hpp */,
+				55902E61265A538200C13CE7 /* IScene.cpp */,
+				55902E6F265A538200C13CE7 /* IScene.hpp */,
+				55902E7F265A538300C13CE7 /* Label.cpp */,
+				55902E4C265A538100C13CE7 /* Label.hpp */,
+				55902E88265A538300C13CE7 /* LOG.cpp */,
+				55902E67265A538200C13CE7 /* LOG.hpp */,
+				55902E8A265A538300C13CE7 /* log.txt */,
+				55902E7C265A538300C13CE7 /* LoseScene.cpp */,
+				55902E81265A538300C13CE7 /* LoseScene.hpp */,
+				55902E44265A538100C13CE7 /* main.cpp */,
+				55902E70265A538300C13CE7 /* NormalEnemy.cpp */,
+				55902E5E265A538200C13CE7 /* NormalEnemy.hpp */,
+				552CD92426629AC800D777DB /* EnemyBullet.cpp */,
+				552CD92526629AC800D777DB /* EnemyBullet.hpp */,
+				55902E5F265A538200C13CE7 /* Plane.cpp */,
+				55902E51265A538100C13CE7 /* Plane.hpp */,
+				55902E56265A538200C13CE7 /* PlateletTurret.cpp */,
+				55902E68265A538200C13CE7 /* PlateletTurret.hpp */,
+				55902E4D265A538100C13CE7 /* PlayScene.cpp */,
+				552CD933266932CE00D777DB /* ScreendoorEnemy.cpp */,
+				552CD934266932CE00D777DB /* ScreendoorEnemy.hpp */,
+				552CD9212662980A00D777DB /* FriesBullet.cpp */,
+				552CD9222662980A00D777DB /* FriesBullet.hpp */,
+				55902E73265A538300C13CE7 /* PlayScene.hpp */,
+				55902E7D265A538300C13CE7 /* PockyBullet.cpp */,
+				55902E83265A538300C13CE7 /* PockyBullet.hpp */,
+				55902E46265A538100C13CE7 /* Point.cpp */,
+				55902E8B265A538300C13CE7 /* Point.hpp */,
+				55902E84265A538300C13CE7 /* Resources.cpp */,
+				55902E52265A538200C13CE7 /* Resources.hpp */,
+				55902EB6265A681700C13CE7 /* ShootEffect.cpp */,
+				55902EB7265A681700C13CE7 /* ShootEffect.hpp */,
+				55902E7E265A538300C13CE7 /* Slider.cpp */,
+				55902E74265A538300C13CE7 /* Slider.hpp */,
+				55902E47265A538100C13CE7 /* SofaEnemy.cpp */,
+				55902E78265A538300C13CE7 /* SofaEnemy.hpp */,
+				55902E5A265A538200C13CE7 /* Sprite.cpp */,
+				55902E86265A538300C13CE7 /* Sprite.hpp */,
+				55902E60265A538200C13CE7 /* StageSelectScene.cpp */,
+				55902E53265A538200C13CE7 /* StageSelectScene.hpp */,
+				55902E58265A538200C13CE7 /* Start_Scene.cpp */,
+				55902E63265A538200C13CE7 /* Start_Scene.hpp */,
+				55902EB3265A5B0200C13CE7 /* Setting_Scene.cpp */,
+				55902EB4265A5B0200C13CE7 /* Setting_Scene.hpp */,
+				55902E6A265A538200C13CE7 /* StrongEnemy.cpp */,
+				55902E55265A538200C13CE7 /* StrongEnemy.hpp */,
+				55902E6C265A538200C13CE7 /* Turret.cpp */,
+				55902E6D265A538200C13CE7 /* Turret.hpp */,
+				55902E85265A538300C13CE7 /* TurretButton.cpp */,
+				55902E4B265A538100C13CE7 /* TurretButton.hpp */,
+				55902E54265A538200C13CE7 /* WBCellTurret.cpp */,
+				552CD91B26624EE200D777DB /* SnowPeaTurret.cpp */,
+				552CD91E2662552100D777DB /* FrozenPeaBullet.cpp */,
+				552CD91F2662552100D777DB /* FrozenPeaBullet.hpp */,
+				552CD91C26624EE200D777DB /* SnowPeaTurret.hpp */,
+				55902E45265A538100C13CE7 /* WBCellTurret.hpp */,
+				55902E6E265A538200C13CE7 /* WinScene.cpp */,
+				55902E87265A538300C13CE7 /* WinScene.hpp */,
+				55902E06265A52AF00C13CE7 /* Mini_Project_2 */,
+				55902E05265A52AF00C13CE7 /* Products */,
+				55902E1B265A533A00C13CE7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		55902E05265A52AF00C13CE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55902E04265A52AF00C13CE7 /* Mini_Project_2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55902E06265A52AF00C13CE7 /* Mini_Project_2 */ = {
+			isa = PBXGroup;
+			children = (
+				55902E0D265A52B100C13CE7 /* Assets.xcassets */,
+				55902E0F265A52B100C13CE7 /* Main.storyboard */,
+				55902E12265A52B100C13CE7 /* Info.plist */,
+				55902E15265A52B100C13CE7 /* Mini_Project_2.entitlements */,
+			);
+			path = Mini_Project_2;
+			sourceTree = "<group>";
+		};
+		55902E1B265A533A00C13CE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55902E20265A533A00C13CE7 /* liballegro_acodec.5.2.6.dylib */,
+				55902E28265A533A00C13CE7 /* liballegro_audio.5.2.6.dylib */,
+				55902E24265A533A00C13CE7 /* liballegro_color.5.2.6.dylib */,
+				55902E25265A533A00C13CE7 /* liballegro_dialog.5.2.6.dylib */,
+				55902E27265A533A00C13CE7 /* liballegro_font.5.2.6.dylib */,
+				55902E1E265A533A00C13CE7 /* liballegro_image.5.2.6.dylib */,
+				55902E22265A533A00C13CE7 /* liballegro_main.5.2.6.dylib */,
+				55902E23265A533A00C13CE7 /* liballegro_memfile.5.2.6.dylib */,
+				55902E1F265A533A00C13CE7 /* liballegro_physfs.5.2.6.dylib */,
+				55902E1D265A533A00C13CE7 /* liballegro_primitives.5.2.6.dylib */,
+				55902E1C265A533A00C13CE7 /* liballegro_ttf.5.2.6.dylib */,
+				55902E26265A533A00C13CE7 /* liballegro_video.5.2.6.dylib */,
+				55902E21265A533A00C13CE7 /* liballegro.5.2.6.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55902E03265A52AF00C13CE7 /* Mini_Project_2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55902E18265A52B100C13CE7 /* Build configuration list for PBXNativeTarget "Mini_Project_2" */;
+			buildPhases = (
+				55902E00265A52AF00C13CE7 /* Sources */,
+				55902E01265A52AF00C13CE7 /* Frameworks */,
+				55902E02265A52AF00C13CE7 /* Resources */,
+				55902E43265A533A00C13CE7 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mini_Project_2;
+			productName = Mini_Project_2;
+			productReference = 55902E04265A52AF00C13CE7 /* Mini_Project_2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55902DFC265A52AF00C13CE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					55902E03265A52AF00C13CE7 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 55902DFF265A52AF00C13CE7 /* Build configuration list for PBXProject "Mini_Project_2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55902DFB265A52AF00C13CE7;
+			productRefGroup = 55902E05265A52AF00C13CE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55902E03265A52AF00C13CE7 /* Mini_Project_2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55902E02265A52AF00C13CE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55902EB2265A53A300C13CE7 /* resources in Resources */,
+				55902EB0265A538400C13CE7 /* log.txt in Resources */,
+				55902E0E265A52B100C13CE7 /* Assets.xcassets in Resources */,
+				55902E11265A52B100C13CE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55902E00265A52AF00C13CE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552CD91D26624EE200D777DB /* SnowPeaTurret.cpp in Sources */,
+				55902EA5265A538400C13CE7 /* IceCreamBullet.cpp in Sources */,
+				55902EA0265A538400C13CE7 /* StrongEnemy.cpp in Sources */,
+				55902E93265A538400C13CE7 /* WBCellTurret.cpp in Sources */,
+				55902EA8265A538400C13CE7 /* Enemy.cpp in Sources */,
+				55902E9C265A538400C13CE7 /* IScene.cpp in Sources */,
+				552CD92926663FA300D777DB /* WallNutTurret.cpp in Sources */,
+				552CD9202662552100D777DB /* FrozenPeaBullet.cpp in Sources */,
+				55902E96265A538400C13CE7 /* ImageButton.cpp in Sources */,
+				55902EAE265A538400C13CE7 /* TurretButton.cpp in Sources */,
+				55902E9F265A538400C13CE7 /* Group.cpp in Sources */,
+				55902E97265A538400C13CE7 /* Sprite.cpp in Sources */,
+				55902E95265A538400C13CE7 /* Start_Scene.cpp in Sources */,
+				55902E8F265A538400C13CE7 /* Allegro5Exception.cpp in Sources */,
+				55902E9E265A538400C13CE7 /* ExplosionEffect.cpp in Sources */,
+				55902EA6265A538400C13CE7 /* Bullet.cpp in Sources */,
+				552CD9232662980A00D777DB /* FriesBullet.cpp in Sources */,
+				55902EAC265A538400C13CE7 /* Label.cpp in Sources */,
+				55902EAD265A538400C13CE7 /* Resources.cpp in Sources */,
+				552CD92C266649A300D777DB /* ExplodeNutTurret.cpp in Sources */,
+				55902EA3265A538400C13CE7 /* WinScene.cpp in Sources */,
+				55902EA4265A538400C13CE7 /* NormalEnemy.cpp in Sources */,
+				55902E98265A538400C13CE7 /* IObject.cpp in Sources */,
+				55902E91265A538400C13CE7 /* Collider.cpp in Sources */,
+				55902E9B265A538400C13CE7 /* StageSelectScene.cpp in Sources */,
+				55902EB8265A681700C13CE7 /* ShootEffect.cpp in Sources */,
+				55902E92265A538400C13CE7 /* IControl.cpp in Sources */,
+				55902EB5265A5B0200C13CE7 /* Setting_Scene.cpp in Sources */,
+				55902EAA265A538400C13CE7 /* PockyBullet.cpp in Sources */,
+				55902E8D265A538400C13CE7 /* Point.cpp in Sources */,
+				55902EA2265A538400C13CE7 /* Turret.cpp in Sources */,
+				552CD92F2667C53C00D777DB /* RemoveTurret.cpp in Sources */,
+				55902E9D265A538400C13CE7 /* DirtyEffect.cpp in Sources */,
+				55902E8E265A538400C13CE7 /* SofaEnemy.cpp in Sources */,
+				552CD935266932CE00D777DB /* ScreendoorEnemy.cpp in Sources */,
+				55902E94265A538400C13CE7 /* PlateletTurret.cpp in Sources */,
+				55902E99265A538400C13CE7 /* GameEngine.cpp in Sources */,
+				55902E9A265A538400C13CE7 /* Plane.cpp in Sources */,
+				55902EA9265A538400C13CE7 /* LoseScene.cpp in Sources */,
+				55902EAF265A538400C13CE7 /* LOG.cpp in Sources */,
+				552CD9322668DA6C00D777DB /* SunflowerTurret.cpp in Sources */,
+				55902E8C265A538400C13CE7 /* main.cpp in Sources */,
+				55902EA7265A538400C13CE7 /* Image.cpp in Sources */,
+				552CD92626629AC800D777DB /* EnemyBullet.cpp in Sources */,
+				55902EA1265A538400C13CE7 /* AudioHelper.cpp in Sources */,
+				55902EAB265A538400C13CE7 /* Slider.cpp in Sources */,
+				55902E90265A538400C13CE7 /* PlayScene.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55902E0F265A52B100C13CE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55902E10265A52B100C13CE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55902E16265A52B100C13CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		55902E17265A52B100C13CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		55902E19265A52B100C13CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mini_Project_2/Mini_Project_2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Mini_Project_2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/allegro/5.2.6.0/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "olgi9911.Mini-Project-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55902E1A265A52B100C13CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mini_Project_2/Mini_Project_2.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Mini_Project_2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/allegro/5.2.6.0/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "olgi9911.Mini-Project-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55902DFF265A52AF00C13CE7 /* Build configuration list for PBXProject "Mini_Project_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55902E16265A52B100C13CE7 /* Debug */,
+				55902E17265A52B100C13CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55902E18265A52B100C13CE7 /* Build configuration list for PBXNativeTarget "Mini_Project_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55902E19265A52B100C13CE7 /* Debug */,
+				55902E1A265A52B100C13CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55902DFC265A52AF00C13CE7 /* Project object */;
+}
